@@ -1,0 +1,18 @@
+
+type block = {
+  hash: string;
+  net_id: string;
+  protocol: string;
+  level: int;
+  proto: int;
+  predecessor: string;
+  timestamp: string;
+  validation_pass: int;
+  operations_hash: string;
+  fitness: string list;
+  data: string;
+}
+
+type blocks = {
+  blocks: block list list;
+}

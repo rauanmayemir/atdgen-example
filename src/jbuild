@@ -1,0 +1,19 @@
+(jbuild_version 1)
+
+(rule
+ ((targets (types_j.ml types_j.mli))
+  (deps    (types.atd))
+  (action  (run atdgen -j ${<}))))
+
+(rule
+ ((targets (types_t.ml types_t.mli))
+  (deps    (types.atd))
+  (action  (run atdgen -t ${<}))))
+
+(library
+  ((name atdgenexample)
+   (public_name atdgenexample)
+   (libraries (
+     atdgen yojson
+   ))
+  ))

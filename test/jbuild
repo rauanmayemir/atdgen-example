@@ -1,0 +1,15 @@
+(jbuild_version 1)
+
+(alias
+  ((name runtest)
+   (deps (test.exe
+         (glob_files resources/*)))
+   (action (run ${exe:test.exe}))))
+
+(executable
+  ((name test)
+   (libraries (
+     stdio
+     atdgenexample
+   ))
+  ))
