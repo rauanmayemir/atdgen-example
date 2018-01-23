@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "atdgen-example",
+  "version": "0.1.0",
+  "description": "Atdgen example",
+  "author": "Rauan Mayemir <rauanmayemir@protonmail.com>",
+  "license": "MIT",
+  "esy": {
+    "build": ["jbuilder build"],
+    "install": ["esy-installer"],
+    "buildsInSource": "_build"
+  },
+  "resolutions": {
+    "**/@opam/base": "100000000.10.0",
+    "**/@opam/sexplib": "100000000.10.0",
+    "**/@opam/stdio": "100000000.10.0",
+    "**/@opam/ppx_core": "100000000.10.0",
+    "**/@opam/ppx_driver": "100000000.10.2"
+  },
+  "dependencies": {
+    "@esy-ocaml/esy-installer": "^0.0.0",
+    "@opam/jbuilder": "^1.0.0-beta16",
+    "@opam/atdgen": "^1.12.0",
+    "@opam/base": "*",
+    "@opam/stdio": "*",
+    "@opam/yojson": "^1.4.0"
+  },
+  "peerDependencies": {
+    "ocaml": "~4.4.2000"
+  },
+  "devDependencies": {
+    "ocaml": "~4.4.2000",
+    "@esy-ocaml/merlin": "^3.0.5",
+    "@opam/alcotest": "^0.8.1"
+  }
+}

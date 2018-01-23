@@ -1,10 +1,12 @@
-/_build
-
 /.vscode
+
+*.install
 .merlin
 
 *~
 \#*\#
 
-/_opam
-/atdgenexample.install
+/coverage
+/_build
+/node_modules
+yarn-error.log

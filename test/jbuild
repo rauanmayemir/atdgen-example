@@ -1,15 +1,16 @@
 (jbuild_version 1)
 
+(executable
+  ((name test)
+   (libraries (
+     atdgenexample
+     stdio
+     alcotest
+   ))
+  ))
+
 (alias
   ((name runtest)
    (deps (test.exe
          (glob_files resources/*)))
-   (action (run ${exe:test.exe}))))
-
-(executable
-  ((name test)
-   (libraries (
-     stdio
-     atdgenexample
-   ))
-  ))
+   (action (run ${<}))))

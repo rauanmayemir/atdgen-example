@@ -1,16 +1,15 @@
-all:
-	make build
+all: build
 
 build-deps:
-	opam install atdget-example --deps-only
+	@esy install
 
 build:
-	jbuilder build --dev
+	@esy build
 
 test:
-	@jbuilder runtest --dev
+	@esy jbuilder runtest --dev
 
 clean:
-	@jbuilder clean
+	@esy jbuilder clean
 
 .PHONY: all test build-deps clean
