@@ -206,9 +206,9 @@
     ocaml " >= 4.1.0"
 
 "@opam/jbuilder@ >= 1.0.0-beta10", "@opam/jbuilder@ >= 1.0.0-beta12", "@opam/jbuilder@*", "@opam/jbuilder@^1.0.0-beta16":
-  version "1.0.0-beta17"
-  uid "8ce2fc3709829575cbdb5f0294e7e1e8"
-  resolved "@opam/jbuilder@1.0.0-beta17-8ce2fc3709829575cbdb5f0294e7e1e8.tgz"
+  version "1.0.0-beta16"
+  uid "268cea30119d82b294b8a8333019a3d6"
+  resolved "@opam/jbuilder@1.0.0-beta16-268cea30119d82b294b8a8333019a3d6.tgz"
   dependencies:
     "@esy-ocaml/esy-installer" "^0.0.0"
     "@esy-ocaml/substs" "^0.0.1"
